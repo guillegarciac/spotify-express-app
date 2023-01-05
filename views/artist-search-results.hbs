@@ -1,0 +1,31 @@
+<body>
+  <header>
+    <nav id="nav-bar">
+      <a href="/"> ← Go back</a>
+    </nav>
+  </header>
+  <div>
+    <h1>Results for: {{artist}}</h1>
+    {{#each items}}
+      <div class="artist-card">
+        {{!-- To show only the third (small) image of the object #with images.[2], 
+        however using 1 for better resolution and reducing height--}}
+        <div class="card-container-artist">
+          {{#with images.[1]}}  
+            <img height="250" src="{{url}}" alt={{name}}>
+          {{/with}}
+        </div>
+        <div class="card-container">
+          <h3>{{name}}</h3>
+          <h4>Followers {{follorers.total}}</h4>
+          <h4>Trending Score {{popularity}} </h4>
+          <div id="button-see-more">
+            {{!-- ../artist to get the global varaibale for this template --}}
+            <a href="/albums/{{id}}?artist={{../artist}}" method="GET" name="artistId">See albums</a>
+          </div>
+        </div>  
+      </div>
+    {{/each}}
+  </div>
+</body>
+

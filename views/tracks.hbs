@@ -1,0 +1,23 @@
+<body>
+  <header>
+    <nav id="nav-bar">
+      <a href="/albums/{{artistId}}?artist={{artist}}"> ← Go back</a>
+    </nav>
+  </header>
+  <div>
+    <h1>Artist: {{artist}}</h1>
+    <h2>Album: {{albumId}}</h2>
+    {{#each items}}
+    <div class="track-card">
+      <div class="card-container-track">
+        <p>{{name}}</p>
+      </div>          
+      <div class="card-container">
+        <figure>
+          <audio controls src={{preview_url}}></audio>
+        </figure>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</body>

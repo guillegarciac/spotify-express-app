@@ -1,0 +1,36 @@
+<body>
+    <header>
+      <nav id="nav-bar">
+        <a href="https://www.spotify.com">
+          <img id="nav-logo" src="./images/spotify-logo.png"  alt="spotify-logo"/>
+        </a>
+        <ul>
+          <li><a href="https://developer.spotify.com/dashboard/login">spotifyDevs</a></li>
+          <li><a href="https://github.com/guillegarciac/lab-express-spotify">githubLab</a></li>
+          <li><a href="https://www.npmjs.com/package/spotify-web-api-node">npmDocs</a></li>
+        </ul>
+      </nav>
+    </header>
+<div id="index-main">
+    <h1>Spotify Lab</h1>    
+    <div class="search-form">
+        <div class="form">
+        <h2>Search an Artist Picture</h2>
+            <form action="/artist-picture" method="GET">
+            <label>Artist name</label>
+            <input required type="text" name="artist" placeholder="Kendrick Lamar"/>
+            <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="search-form">
+        <div class="form">
+        <h2>Search for Artists and Albums</h2>
+            <form action="/artist-search" method="GET">
+            <label>Artist name</label>
+            <input required type="text" name="artist" placeholder="Kendrick Lamar"/>
+            <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
