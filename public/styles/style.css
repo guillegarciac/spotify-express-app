@@ -259,3 +259,125 @@ footer > a {
   color: white;
   padding: 20px 15px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 390px) {
+
+  header nav ul {
+      list-style: none;
+      display: flex;
+  }
+  
+  header nav ul li {
+      margin-left: 1.5vh;
+  }
+  
+  header nav a {
+      font-size: 1.7vh;
+      text-decoration: none;
+      color: white;
+  } 
+  
+  header nav a #nav-logo {
+      height: 2.8vh;
+      margin: 0.8vh;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    padding: 65px 15px 23px 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .search-form {
+    margin: 20px 15px 10px 15px;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .search-form h2 {
+    color: #1DB954;
+    font-size: 18px;
+    padding: 0px 0px 10px;
+  }
+
+  .card-container-artist {
+    margin-top: 10px;
+    padding: 0px 40px;
+    width: 15vw;
+    display: flex;
+    align-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-container-artist > img {
+    display: block;
+    margin: 0px 25px;
+    height: 120px;
+    }
+
+  .card-container {
+    padding: 13px 26px;
+    width: 29vw;
+    font-size: 12px;
+  }
+
+  .card-container > h3 {
+    font-size: 20px;
+  }
+
+  #button-see-more {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  #button-see-more > a {
+    background: #1DB954;
+    color: #fff;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+  }
+
+  .artist-card {
+    height: 180px;
+  }  
+
+  .track-card {
+    position: relative;
+    max-width: 300px;
+    padding: 15px 20px 0px 20px;
+    display: flex;
+    color: #fff;
+  }
+
+  .card-container-track {
+    margin-top: 20px;
+    width: 45vw;
+    display: flex;
+    justify-content: left;
+  }
+
+  audio {
+    width: 145px;
+    height: 22px;
+  }
+
+} 
