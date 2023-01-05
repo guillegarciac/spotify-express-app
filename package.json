@@ -1,16 +1,20 @@
 {
+  "homepage": "https://guillegarciac.github.io/spotify-express-app/",
   "name": "starter-code",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
