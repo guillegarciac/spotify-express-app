@@ -262,7 +262,7 @@ footer > a {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
 
   header nav ul {
       list-style: none;
